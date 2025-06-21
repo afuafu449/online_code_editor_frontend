@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Code Editor ✨</title>
+
+    <!-- Fonts & Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Online <span>Code&nbsp;Editor</span></h1>
+    </header>
+
+    <main>
+      <!-- Editor -->
+      <textarea id="code" spellcheck="false"
+        placeholder="Write your HTML ⇢ CSS ⇢ JS code here…&#10;Then press ▶ Run or Ctrl + Enter"></textarea>
+
+      <!-- Action bar -->
+      <div class="actions">
+        <button id="run" title="Run (Ctrl+Enter)">▶ Run</button>
+
+        <div class="save-wrap">
+          <button id="save" title="Download your code (Ctrl+S)">💾 Save as</button>
+          <input
+            type="text"
+            id="filename"
+            placeholder="index.html"
+            aria-label="Filename"
+          />
+        </div>
+      </div>
+
+      <!-- Live preview -->
+      <iframe id="preview" title="Live preview"></iframe>
+    </main>
+
+    <footer>
+      <p>Made with 💜 by Afna • Press <strong>Ctrl+Enter</strong> to run &amp; <strong>Ctrl+S</strong> to save.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
